@@ -37,7 +37,7 @@
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-  }
+}
 
 header {
     background-color: var(--black);
@@ -77,6 +77,18 @@ header {
     padding: 0 0 0 92px;
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.brand__wrp:before {
+    content: '';
+    border: 1px solid #F16D7F;
+    background-color: #F16D7F;
+    ;
+    width: 12px;
+    height: 92px;
+    left: 40px;
+    position: absolute;
 }
 
 .brand__title {
@@ -118,11 +130,13 @@ header {
 .sales__text {
     color: var(--wight);
     text-align: center;
+    text-transform: uppercase;
 }
 
 .sales__item-title {
     text-align: center;
     color: #df3c51;
+    text-transform: uppercase;
 }
 
 .sales__img-women {
@@ -172,9 +186,8 @@ header {
 }
 
 .product__item-title {
-    margin-top: 25px;
-    margin-bottom: 12px;
-    margin-left: 18px;
+    text-transform: uppercase;
+    margin: 25px 0 12px 18px;
 }
 
 .product__item-text {
@@ -188,8 +201,54 @@ header {
     color: #df3c51;
 }
 
-.botton {
-    margin: 48px 0 95px 0;
+.product__item-wrp {
+    position: relative;
+}
+
+/* ---Затемняшка при наведении -- */
+
+.product__item-overlay {
+    width: 100%;
+    min-height: 420px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+}
+
+/* -----Кнопка при наведении ---- */
+
+.product__button {
+    position: absolute;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    padding: 14px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+/* -------------------------------- */
+
+.product__button,
+.product__item-overlay {
+    display: none;
+}
+
+.product__item:hover .product__button,
+.product__item:hover .product__item-overlay {
+    display: block;
+}
+
+/* ------Кнопка Browse All Produsct------- */
+
+.botton__item {
+    border: 1px solid #df3c51;
+    display: block;
+    margin: 48px auto 95px auto;
 }
 
 .botton__link {
@@ -201,6 +260,8 @@ header {
     color: #df3c51;
     padding: 14px 38px;
 }
+
+/* ---------------------------------------- */
 
 .info {
     background-color: #222224;
@@ -216,7 +277,7 @@ header {
     margin-top: 103px;
     margin-bottom: 28px;
     margin-left: 173px;
-    
+
 }
 
 .info__title {
@@ -230,4 +291,117 @@ header {
 
 .info__text {
     text-align: center;
+}
+
+.subscribe__list {
+    display: flex;
+    justify-content: space-between;
+    min-height: 448px;
+}
+
+.subscribe__position {
+    margin-top: 150px;
+}
+
+.subscribe__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.subscribe__text {
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 400px;
+    color: #222224;
+}
+
+.subscribe__text-span {
+    font-style: italic;
+}
+
+.subscribe__subtitle {
+    margin-top: 150px;
+}
+
+.subscribe__subtitle {
+    text-transform: uppercase;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe__subtitle-text {
+    text-transform: uppercase;
+    font-family: Lato;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+    margin-bottom: 32px;
+}
+
+.email {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.subscribe__email {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 18px;
+    margin-left: 30px;
+    width: 256px;
+    background: #E1E1E1;
+    color: #222224;
+    position: relative;
+}
+
+.subscribe__btm {
+    position: absolute;
+    padding: 18px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 100px;
+    background: #F16D7F;
+    color: var(--wight);
+}
+
+.subscribe__email,
+.subscribe__btm {
+    border: none;
+}
+
+
+.footer__aside {
+    background-color: var(--black);
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    max-height: 79px;
+}
+
+.footer__item-text {
+    padding: 30px 0 30px 0;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.footer__social {
+    padding: 30px 0 30px 0;
+}
+
+.footer__social-icon {
+    margin-left: 7px;
 }
