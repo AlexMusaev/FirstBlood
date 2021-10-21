@@ -1,0 +1,357 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.page {
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 17px; }
+
+.text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto; }
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px; }
+
+.header {
+  background-color: #222222; }
+  .header .header__nav {
+    display: none; }
+  .header .header__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px; }
+  .header .header__logo {
+    margin: 0 41px 0 0;
+    transition: 1s; }
+    .header .header__logo:hover {
+      transform: scale(1.2); }
+  .header .header__search {
+    transition: 0.5s; }
+    .header .header__search:hover {
+      transform: scale(1.2); }
+  .header .header__link-img {
+    transition: 0.5s;
+    margin: 0 0 0 41px; }
+    .header .header__link-img:hover {
+      transform: scale(1.2); }
+  .header .header__menu-btm {
+    border: none;
+    background-color: transparent; }
+
+.botton .botton__item {
+  border: 1px solid #df3c51;
+  display: block;
+  margin: 48px auto 95px auto;
+  transition: 0.5s; }
+.botton .botton__link {
+  text-decoration: none; }
+.botton .botton__text {
+  text-align: center;
+  color: #df3c51;
+  padding: 14px 38px; }
+.botton .botton__item:hover {
+  transform: scale(1.2); }
+
+.brand {
+  display: flex; }
+  .brand .brand__wrp {
+    background-color: #F1E4E6;
+    flex-grow: 1;
+    padding: 0 0 0 92px;
+    display: flex;
+    align-items: center;
+    position: relative; }
+    .brand .brand__wrp:before {
+      content: '';
+      border: 1px solid #F16D7F;
+      background-color: #F16D7F;
+      width: 12px;
+      height: 92px;
+      left: 40px;
+      position: absolute; }
+  .brand .brand__title {
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase; }
+  .brand .brand__subtitle {
+    display: flex;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px; }
+  .brand .brand__subtitle-fashion {
+    margin-left: 5px;
+    color: #df3c51; }
+
+.email {
+  display: block;
+  margin: 0 auto; }
+  .email .subscribe__email {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 18px;
+    margin-left: 30px;
+    width: 256px;
+    background: #E1E1E1;
+    color: #222224;
+    position: relative; }
+    .email .subscribe__email:focus {
+      background: #ffffff; }
+  .email .subscribe__btm {
+    position: absolute;
+    padding: 18px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 100px;
+    background: #F16D7F;
+    color: var(--wight); }
+  .email .subscribe__email,
+  .email .subscribe__btm {
+    border: none; }
+
+.info {
+  background-color: #222224;
+  height: 341px; }
+  .info .info__list {
+    display: flex;
+    justify-content: space-between; }
+  .info .info__img {
+    margin-top: 103px;
+    margin-bottom: 28px;
+    margin-left: 173px; }
+  .info .info__title {
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: Lato;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB; }
+  .info .info__text {
+    text-align: center; }
+
+.product .product__title {
+  text-align: center;
+  font-family: Lato;
+  font-size: 30px;
+  line-height: 36px; }
+.product .product__subtitle {
+  text-align: center;
+  margin-bottom: 18px; }
+.product .product__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+.product .product__item {
+  max-width: 360px;
+  margin-top: 30px;
+  background-image: url(../img/models/Background.png); }
+.product .product__item-title {
+  text-transform: uppercase;
+  margin: 25px 0 12px 18px; }
+.product .product__item-text {
+  margin-left: 18px; }
+.product .product__item-price {
+  margin-top: 18px;
+  margin-bottom: 20px;
+  margin-left: 18px;
+  color: #df3c51; }
+.product .product__item-wrp {
+  position: relative; }
+.product .product__item-overlay {
+  width: 100%;
+  min-height: 420px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0; }
+.product .product__button {
+  position: absolute;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  padding: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+.product .product__button,
+.product .product__item-overlay {
+  display: none; }
+.product .product__item:hover .product__button,
+.product .product__item:hover .product__item-overlay {
+  display: block; }
+
+.sales .sales__list {
+  display: flex;
+  margin-top: 65px;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+.sales .sales__item {
+  padding: 103px 105px;
+  transition: 0.8s; }
+  .sales .sales__item:hover {
+    transform: scale(1.1); }
+.sales .sales__text {
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase; }
+.sales .sales__item-title {
+  text-align: center;
+  color: #df3c51;
+  text-transform: uppercase; }
+.sales .sales__img-women {
+  background-image: url(../img/sales/sales__img1.jpg);
+  background-repeat: no-repeat;
+  margin-right: 30px; }
+.sales .sales__img-men {
+  background-image: url(../img/sales/sales__img2.jpg);
+  background-repeat: no-repeat;
+  margin-right: 30px; }
+.sales .sales__img-kids {
+  background-image: url(../img/sales/sales__img3.jpg);
+  background-repeat: no-repeat; }
+.sales .sales__img-accesories {
+  background-image: url(../img/sales/sales__img4_down.jpg);
+  background-repeat: no-repeat; }
+
+.subscribe .subscribe__list {
+  display: flex;
+  justify-content: space-between;
+  min-height: 448px; }
+.subscribe .subscribe__position {
+  margin-top: 150px; }
+.subscribe .subscribe__img {
+  display: block;
+  margin: 0 auto; }
+.subscribe .subscribe__text {
+  font-family: Lato;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  width: 400px;
+  color: #222224; }
+.subscribe .subscribe__text-span {
+  font-style: italic; }
+.subscribe .subscribe__subtitle {
+  margin-top: 150px; }
+.subscribe .subscribe__subtitle {
+  text-transform: uppercase;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222224; }
+.subscribe .subscribe__subtitle-text {
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-style: normal;
+  font-size: 24px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222224;
+  margin-bottom: 32px; }
+
+.footer .footer__aside {
+  background-color: #222222; }
+.footer .footer__list {
+  display: flex;
+  justify-content: space-between;
+  max-height: 79px; }
+.footer .footer__item-text {
+  padding: 30px 0 30px 0;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB; }
+.footer .footer__social {
+  padding: 30px 0 30px 0; }
+.footer .footer__social-icon {
+  margin-left: 7px; }
+.footer .footer__social-img {
+  transition: 0.5s; }
+.footer .footer__social-img:hover {
+  transform: scale(1.1); }
+
+.registration__heading {
+  min-height: 148px;
+  background-color: #F8F3F4; }
+  .registration__heading .registration__heading-text {
+    font-family: "Lato";
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase; }
+
+/*# sourceMappingURL=styles.css.map */

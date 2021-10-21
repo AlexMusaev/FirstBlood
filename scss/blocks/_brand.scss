@@ -1,0 +1,48 @@
+.brand {
+    display: flex;
+
+    .brand__wrp {
+        background-color: $light-pink;
+        flex-grow: 1;
+        padding: 0 0 0 92px;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &:before {
+            content: '';
+            border: 1px solid #F16D7F;
+            background-color: #F16D7F;
+            width: 12px;
+            height: 92px;
+            left: 40px;
+            position: absolute;
+        }
+    }
+    
+    .brand__title {
+        font-family: Lato;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 58px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    
+    .brand__subtitle {
+        display: flex;
+        font-family: Lato;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px;
+    }
+    
+    .brand__subtitle-fashion {
+        margin-left: 5px;
+        color: #df3c51;
+    }
+}
+

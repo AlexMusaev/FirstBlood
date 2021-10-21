@@ -1,0 +1,36 @@
+.email {
+    display: block;
+    margin: 0 auto;
+
+    .subscribe__email {
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        padding: 18px;
+        margin-left: 30px;
+        width: 256px;
+        background: #E1E1E1;
+        color: #222224;
+        position: relative;
+
+        &:focus {
+            background: #ffffff;
+        }
+    }
+    
+    .subscribe__btm {
+        position: absolute;
+        padding: 18px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        width: 100px;
+        background: #F16D7F;
+        color: var(--wight);
+    }
+    
+    .subscribe__email,
+    .subscribe__btm {
+        border: none;
+    }
+}
+
+
