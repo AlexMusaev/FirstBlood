@@ -1,0 +1,57 @@
+.subscribe {
+
+    .subscribe__list {
+        display: flex;
+        justify-content: space-between;
+        min-height: 448px;
+    }
+    
+    .subscribe__position {
+        margin-top: 150px;
+    }
+    
+    .subscribe__img {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .subscribe__text {
+        font-family: Lato;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        width: 400px;
+        color: #222224;
+    }
+    
+    .subscribe__text-span {
+        font-style: italic;
+    }
+    
+    .subscribe__subtitle {
+        margin-top: 150px;
+    }
+    
+    .subscribe__subtitle {
+        text-transform: uppercase;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 167.2%;
+        text-align: center;
+        color: #222224;
+    }
+    
+    .subscribe__subtitle-text {
+        text-transform: uppercase;
+        font-family: $font-lato;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 167.2%;
+        text-align: center;
+        color: #222224;
+        margin-bottom: 32px;
+    }
+}
+

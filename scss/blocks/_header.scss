@@ -1,0 +1,46 @@
+.header {
+    background-color: $black;
+
+    .header__nav {
+        display: none;
+    }
+    
+    .header__wrp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 75px;
+    }
+    
+    .header__logo {
+        margin: 0 41px 0 0;
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    
+    .header__search {
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    
+    .header__link-img {
+        transition: 0.5s;
+        margin: 0 0 0 41px;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .header__menu-btm {
+        border: none;
+        background-color: transparent;
+    }
+}
+
