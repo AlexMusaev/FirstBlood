@@ -1,54 +1,74 @@
 .sales {
+    display: block;
+    margin-top: 65px;
 
     .sales__list {
         display: flex;
-        margin-top: 65px;
+        flex-wrap: wrap;
         justify-content: space-between;
-        margin-bottom: 30px;
     }
-    
-    .sales__item {
-        padding: 103px 105px;
-        transition: 0.8s;
 
-        &:hover {
-            transform: scale(1.1);
-        }
+    .sales__item {
+        width: 31%;
+        height: auto;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sales__item-wide {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .sales__item-img {
+        min-width: 232px;
+    }
+
+    .sales__decs {
+        position: absolute;
+        text-align: center;
+        cursor: pointer;
     }
 
     .sales__text {
-        color: $wight;
-        text-align: center;
+        font-family: "Lato";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #FFF;
         text-transform: uppercase;
     }
-    
-    .sales__item-title {
-        text-align: center;
-        color: #df3c51;
+
+    .sales__subtitle {
+        font-family: "Lato";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        color: #F16D7F;
         text-transform: uppercase;
-    }
-    
-    .sales__img-women {
-        background-image: url(../img/sales/sales__img1.jpg);
-        background-repeat: no-repeat;
-        margin-right: 30px;
-    }
-    
-    .sales__img-men {
-        background-image: url(../img/sales/sales__img2.jpg);
-        background-repeat: no-repeat;
-        margin-right: 30px;
-    }
-    
-    .sales__img-kids {
-        background-image: url(../img/sales/sales__img3.jpg);
-        background-repeat: no-repeat;
-    }
-    
-    .sales__img-accesories {
-        background-image: url(../img/sales/sales__img4_down.jpg);
-        background-repeat: no-repeat;
     }
 }
 
 
+@media (max-width: 1599px) {
+    .sales {
+        margin-top: 0;
+    }
+
+    .sales__item {
+        margin-top: 20px;
+    }
+
+    .sales__item-wide {
+        margin-top: 20px;
+    }
+
+}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/styles.css">
+    <link rel="stylesheet" href="scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -68,30 +68,38 @@
                     <h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious<span class="brand__subtitle-fashion">fashion</span></span></h1>
                 </div>   
         </section>
-        <section class="sales">
-            <div class="container">
-                <h2 class="sales__header visually-hidden">Sales</h2>
-                <ul class="sales__list">
-                    <li class="sales__item sales__img-women">
+        <section class="sales container">
+            <h2 class="sales__title visually-hidden">sales</h2>
+            <ul class="sales__list">
+                <li class="sales__item">
+                    <img class="sales__item-img" src="img/sales/sales__img1.jpg" alt="sales">
+                    <div class="sales__decs">
                         <p class="sales__text">30% off</p>
-                        <h3 class="sales__item-title">for women</h3>
-                    </li>
-                    <li class="sales__item sales__img-men">
+                        <h3 class="sales__subtitle">for women</h3>
+                    </div>
+                </li>
+                <li class="sales__item">
+                    <img class="sales__item-img" src="img/sales/sales__img2.jpg" alt="sales">
+                    <div class="sales__decs">
                         <p class="sales__text">hot deal</p>
-                        <h3 class="sales__item-title">for men</h3>
-                    </li>
-                    <li class="sales__item sales__img-kids">
+                        <h3 class="sales__subtitle">for men</h3>
+                    </div>
+                </li>
+                <li class="sales__item">
+                    <img class="sales__item-img" src="img/sales/sales__img3.jpg" alt="sales">
+                    <div class="sales__decs">
                         <p class="sales__text">new arrivals</p>
-                        <h3 class="sales__item-title">for kids</h3>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="sales__item sales__img-accesories">
+                        <h3 class="sales__subtitle">for kids</h3>
+                    </div>
+                </li>
+                <li class="sales__item-wide">
+                    <img class="sales__item-img" src="img/sales/sales__img4_down.jpg" alt="sales">
+                    <div class="sales__decs">
                         <p class="sales__text">luxirous & trendy</p>
-                        <h3 class="sales__item-title">accesories</h3>
-                    </li>
-                </ul>
-            </div>
+                        <h3 class="sales__subtitle">accesories</h3>
+                    </div>
+                </li>
+            </ul>
         </section>
         <section class="product">
             <div class="container">
@@ -175,9 +183,8 @@
             </div>
         </section>
         <section class="info">
-            <div class="container">
                 <h2 class="info__heading visually-hidden">more information</h2>
-                <ul class="info__list">
+                <ul class="info__list container">
                     <li class="info__item">
                         <img class="info__img" src="img/more_info/car.png" alt="car">
                         <h3 class="info__title">Free Delivery</h3>
@@ -197,7 +204,6 @@
                             models.</p>
                     </li>
                 </ul>
-            </div>
         </section>
     </main>
     <footer class="footer">
@@ -205,13 +211,13 @@
             <section class="subscribe">
                 <h2 class="subscribe__title visually-hidden">subscribe</h2>
                 <ul class="subscribe__list">
-                    <li class="subscribe__item">
+                    <li class="subscribe__item-comment">
                         <div class="subscribe__position">
                             <img class="subscribe__img" src="img/Intersect.png" alt="">
                             <p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<span class="subscribe__text-span"> a pulvinar purus condimentum“</span></p>
                         </div>
                     </li>
-                    <li class="subscribe__item">
+                    <li class="subscribe__item-newletter">
                         <h3 class="subscribe__subtitle">subscribe</h3>
                         <p class="subscribe__subtitle-text">for our newletter and promotion</p>
                         <form action="email" class="email">

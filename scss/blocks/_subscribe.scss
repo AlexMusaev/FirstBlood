@@ -2,26 +2,41 @@
 
     .subscribe__list {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         min-height: 448px;
+        padding: 55px 0 110px;
+    }
+
+    .subscribe__item-comment {
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subscribe__item-newletter {
+        max-width: 560px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
-    .subscribe__position {
-        margin-top: 150px;
-    }
+    
     
     .subscribe__img {
         display: block;
         margin: 0 auto;
+        padding-bottom: 30px;
     }
     
     .subscribe__text {
-        font-family: Lato;
+        font-family: "Lato";
         font-size: 20px;
+        font-weight: 400;
         line-height: 24px;
         text-align: center;
-        width: 400px;
-        color: #222224;
     }
     
     .subscribe__text-span {
@@ -29,29 +44,45 @@
     }
     
     .subscribe__subtitle {
-        margin-top: 150px;
-    }
-    
-    .subscribe__subtitle {
-        text-transform: uppercase;
-        font-family: Lato;
-        font-style: normal;
-        font-weight: bold;
+        font-family: "Lato";
         font-size: 24px;
-        line-height: 167.2%;
+        font-weight: 700;
+        line-height: 38px;
         text-align: center;
-        color: #222224;
+        text-transform: uppercase;
+        margin-top: 50px;
     }
+
     
     .subscribe__subtitle-text {
-        text-transform: uppercase;
-        font-family: $font-lato;
-        font-style: normal;
-        font-size: 24px;
-        line-height: 167.2%;
+        font-family: "Lato";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
         text-align: center;
-        color: #222224;
-        margin-bottom: 32px;
+        text-transform: uppercase;
     }
 }
 
+
+@media (max-width: 1599px) {
+
+    .subscribe__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe__subtitle {
+        font-family: "Lato";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 38px;
+    }
+
+    .subscribe__subtitle-text {
+        font-family: "Lato";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
