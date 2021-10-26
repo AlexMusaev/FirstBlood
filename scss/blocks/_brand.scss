@@ -46,3 +46,26 @@
     }
 }
 
+@media (max-width: 1599px) {
+
+    .brand__img {
+        width: 384px;
+        height: 369px;
+    }
+
+    .brand__title {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 53px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .brand__img {
+        display: none;
+    }
+}
+

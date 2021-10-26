@@ -5,6 +5,7 @@
         font-family: Lato;
         font-size: 30px;
         line-height: 36px;
+        margin-top: 95px;
     }
     
     .product__subtitle {
@@ -21,6 +22,7 @@
     .product__item {
         max-width: 360px;
         margin-top: 30px;
+        box-sizing: border-box;
         background-image: url(../img/models/Background.png);
     }
     
@@ -77,4 +79,8 @@
     }
 }
 
-
+@media (max-width: 1599px) {
+    .product__title {
+        margin-top: 155px;
+    }
+}
