@@ -1,64 +1,77 @@
 .brand {
+
     display: flex;
 
+    .brand__img {
+        width: 48%;
+    }
+
     .brand__wrp {
-        background-color: $light-pink;
-        flex-grow: 1;
-        padding: 0 0 0 92px;
+        background-color: #F1E4E6;
+        padding: 0 0 0 90px;
+    }
+
+    .main__wrp {
         display: flex;
         align-items: center;
-        position: relative;
-
-        &:before {
-            content: '';
-            border: 1px solid #F16D7F;
-            background-color: #F16D7F;
-            width: 12px;
-            height: 92px;
-            left: 40px;
-            position: absolute;
-        }
+        flex-grow: 1;
     }
-    
+
     .brand__title {
-        font-family: Lato;
+        font-family: "LatoBlack";
         font-size: 48px;
-        font-style: normal;
         font-weight: 900;
         line-height: 58px;
-        letter-spacing: 0em;
         text-align: left;
         text-transform: uppercase;
+        position: relative;
+
+        &::before {
+            height: 94px;
+            width: 12px;
+            background-color: #F16D7F;
+            content: "";
+            position: absolute;
+            left: -26px;
+        }
     }
-    
+
     .brand__subtitle {
-        display: flex;
-        font-family: Lato;
+        font-family: "Lato";
         font-size: 32px;
-        font-style: normal;
         font-weight: 700;
         line-height: 38px;
+        display: flex;
     }
-    
-    .brand__subtitle-fashion {
-        margin-left: 5px;
-        color: #df3c51;
+
+    .color-other {
+        color: #F16D7F;
     }
 }
 
+
 @media (max-width: 1599px) {
 
-    .brand__img {
-        width: 384px;
-        height: 369px;
+    .brand__wrp {
+        padding: 0 0 0 60px;
     }
 
     .brand__title {
-        font-family: Lato;
-        font-style: normal;
-        font-weight: 900;
+        font-family: "LatoBlack";
         font-size: 44px;
+        font-weight: 900;
         line-height: 53px;
+
+        &::before {
+            height: 86px;
+        }
+    }
+
+    .brand__subtitle {
+        font-family: "Lato";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
     }
 }
 
@@ -67,5 +80,32 @@
     .brand__img {
         display: none;
     }
-}
+    
+    .brand__wrp {
+        padding: 0 0 0 56px;
+        min-height: 370px;
+    }
 
+    .main__wrp {
+        justify-content: center;
+    }
+
+    .brand__title {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 46px;
+
+        &::before {
+            height: 74px;
+        }
+    }
+
+    .brand__subtitle {
+        font-family: "Lato";
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;   
+    }
+}
