@@ -1,5 +1,12 @@
 .footer {
 
+    background-blend-mode: lighten;
+    background-image: url(../img/footer/footer_bkg.jpg);
+    background-color: rgba(244, 244, 244, 0.7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
     .footer__aside {
         background-color: $black;
     }
@@ -7,19 +14,22 @@
     .footer__list {
         display: flex;
         justify-content: space-between;
-        max-height: 79px;
+        align-items: center;
+        min-height: 75px;
     }
     
     .footer__item-text {
-        padding: 30px 0 30px 0;
-        font-family: Lato;
+        font-family: "Lato";
         font-size: 16px;
+        font-weight: 400;
         line-height: 19px;
         color: #FBFBFB;
     }
     
     .footer__social {
-        padding: 30px 0 30px 0;
+        width: 160px;
+        display: flex;
+        justify-content: space-between;
     }
     
     .footer__social-icon {
@@ -32,5 +42,24 @@
     
     .footer__social-img:hover {
         transform: scale(1.1);
+    }
+}
+
+@media (max-width: 1599px) {
+    
+    .footer {
+        background-position: 25% center;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .footer__list {
+        flex-direction: column-reverse;
+        padding: 40px 0 10px;
+    }
+
+    .footer__social {
+        margin-bottom: 30px;
     }
 }

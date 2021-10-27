@@ -72,3 +72,24 @@
     }
 
 }
+
+@media (max-width: 767px) {
+
+    .sales__list {
+        flex-direction: column;
+        
+    }
+
+    .sales__item {
+        padding-top: 30px;
+        width: 98%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .sales__item-wide {
+        margin-top: 30px;
+        width: 98%;
+        height: auto;
+    }
+}
